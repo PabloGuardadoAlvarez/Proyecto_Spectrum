@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Project Spectrum</string>
+    <string name="email">E-Mail</string>
+    <string name="pass">Password</string>
+    <string name="firstButton">Go!</string>
+    <string name="helperTextPassword">Esto es una contraseña</string>
+    <string name="radiobtn_login_hombre">Hombre</string>
+    <string name="radiobtn_login_mujer">Mujer</string>
+    <string name="radiobtn_login_otro">Otro</string>
+</resources>
