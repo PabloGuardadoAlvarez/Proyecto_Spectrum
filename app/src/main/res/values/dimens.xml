@@ -2,4 +2,5 @@
 <resources>
     <dimen name="padding">14dp</dimen>
     <dimen name="text_view_height">30dp</dimen>
+    <dimen name="personal_data_scroll_view_checkboxes_height">120dp</dimen>
 </resources>
