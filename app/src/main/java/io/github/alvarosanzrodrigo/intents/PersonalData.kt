@@ -27,6 +27,7 @@ class PersonalData : AppCompatActivity() {
         descriptionTextView = findViewById(R.id.personal_data_description_text_view)
         nameTextView = findViewById(R.id.personal_data_name_text_view)
         surnameTextView = findViewById(R.id.personal_data_surname_text_view)
+
     }
     // I made a function where I extract the data from the intent extras and show them in the view
     private fun loadDataFromIntentExtras(){
