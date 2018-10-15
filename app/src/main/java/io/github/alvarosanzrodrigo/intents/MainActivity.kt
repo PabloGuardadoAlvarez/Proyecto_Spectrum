@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun onGoPressed(view: View) {
-        val intent = Intent(this@MainActivity, PersonalData::class.java)
+        val intent = Intent(this@MainActivity, UserActivity::class.java)
 
        intent.putExtra(KEY_USER_NAME, txtEmail.text.toString())
         intent.putExtra(KEY_USER_PASSWORD, txtPsw.text.toString())
