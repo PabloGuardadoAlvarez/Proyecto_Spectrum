@@ -61,9 +61,9 @@ class PersonalData : AppCompatActivity() {
     }
 
     fun onSaveButtonClicked(view: View){
-        val intent = Intent(this, Pruebapic::class.java)
-        intent.putExtra("user", user)
-        startActivity(intent)
+        //val intent = Intent(this, Pruebapic::class.java)
+        //intent.putExtra("user", user)
+        //startActivity(intent)
     }
         // here we decide what to do from the resultCode
     override fun onActivityResult(requestCode: Int, resultCode: Int, i: Intent?) {

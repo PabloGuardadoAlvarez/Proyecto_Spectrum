@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this@MainActivity, PersonalData::class.java)
             startActivityForResult(intent, 0)
         } else {
-            Toast.makeText(this, "Contraseña o correo incorrecto", Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "Email or password is incorrect", Toast.LENGTH_LONG).show()
         }
     }
 
