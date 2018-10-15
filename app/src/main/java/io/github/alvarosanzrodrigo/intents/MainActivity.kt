@@ -11,6 +11,9 @@ import android.widget.EditText
 import android.widget.Toast
 import butterknife.BindView
 import butterknife.ButterKnife
+import android.R.attr.key
+
+
 
 class MainActivity : AppCompatActivity() {
     //@BindView(R.id.editText2) lateinit var txtEmail : EditText
@@ -31,6 +34,13 @@ class MainActivity : AppCompatActivity() {
     fun onGoPressed(view: View) {
         if (txtEmail.text.toString().equals("ejemplo@ejemplo.com") && txtPsw.text.toString().equals("123")) {
             val intent = Intent(this, PersonalData::class.java)
+
+            val us = User()
+            us.email = txtEmail.text.toString()
+            us.password = txtPsw.text.toString()
+            intent.putExtra(User.intentKey, us)
+
+
 
             startActivityForResult(intent, 0)
         } else {
