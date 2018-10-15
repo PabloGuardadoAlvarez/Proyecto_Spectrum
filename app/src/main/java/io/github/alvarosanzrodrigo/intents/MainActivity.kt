@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
 
     fun onGoPressed(view: View) {
         if (txtEmail.text.toString().equals("ejemplo@ejemplo.com") && txtPsw.text.toString().equals("123")) {
-            val intent = Intent(this, PersonalData::class.java)
+            val intent = Intent(this, UserActivity::class.java)
 
             val us = User()
             us.email = txtEmail.text.toString()
