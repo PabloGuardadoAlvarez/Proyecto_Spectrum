@@ -8,6 +8,7 @@
     <string name="radiobtn_login_mujer">Mujer</string>
     <string name="radiobtn_login_otro">Otro</string>
     <string name="profile_pic">profile pic</string>
+    <string name="personal_data_description_hint">A hint</string>
     <string name="lore_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus, eros ut congue accumsan, velit sapien condimentum purus, quis commodo nulla massa quis eros. Cras vehicula, magna et sodales pulvinar, arcu eros efficitur mi, sit amet rhoncus velit augue ac nulla. Sed id nisi et leo aliquet convallis ac ac tortor. Cras egestas consequat nisi, ut consequat lacus scelerisque vel. Donec in euismod urna, accumsan sollicitudin sapien. Morbi nec metus facilisis, lobortis arcu non, elementum elit. Curabitur quis quam fermentum, commodo quam a, semper nulla. Proin vitae ante in magna mollis commodo.</string>
     <string name="gender">Gender</string>
     <string name="hobbies">Hobbies</string>

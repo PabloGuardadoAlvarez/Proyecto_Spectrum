@@ -30,7 +30,8 @@ class MainActivity : AppCompatActivity() {
 
     fun onGoPressed(view: View) {
         if (txtEmail.text.toString().equals("ejemplo@ejemplo.com") && txtPsw.text.toString().equals("123")) {
-            val intent = Intent(this@MainActivity, PersonalData::class.java)
+            val intent = Intent(this, PersonalData::class.java)
+
             startActivityForResult(intent, 0)
         } else {
             Toast.makeText(this, "Email or password is incorrect", Toast.LENGTH_LONG).show()

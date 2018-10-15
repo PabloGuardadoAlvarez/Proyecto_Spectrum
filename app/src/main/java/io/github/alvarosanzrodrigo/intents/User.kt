@@ -20,7 +20,7 @@ class User() : Parcelable{
     var description: String? = null
     var isFemale: Boolean = false
     var hobies: ArrayList<String>? = null
-
+    
     constructor(parcel: Parcel) : this() {
         profileimage = parcel.readParcelable(Uri::class.java.classLoader)
         email = parcel.readString()
@@ -58,6 +58,7 @@ class User() : Parcelable{
     }
 
     companion object CREATOR : Parcelable.Creator<User> {
+        const val intentKey = "USER_OBJECT"
         override fun createFromParcel(parcel: Parcel): User {
             return User(parcel)
         }
