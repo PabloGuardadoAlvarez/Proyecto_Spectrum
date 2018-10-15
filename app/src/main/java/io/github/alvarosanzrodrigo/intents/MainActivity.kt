@@ -30,10 +30,10 @@ class MainActivity : AppCompatActivity() {
 
     fun onGoPressed(view: View) {
         if (txtEmail.text.toString().equals("ejemplo@ejemplo.com") && txtPsw.text.toString().equals("123")) {
-            val intent = Intent(this@MainActivity, UserActivity::class.java)
+            val intent = Intent(this@MainActivity, PersonalData::class.java)
             startActivityForResult(intent, 0)
         } else {
-            Toast.makeText(this, "Contraseña o correo incorrecto", Toast.LENGTH_LONG)
+            Toast.makeText(this, "Contraseña o correo incorrecto", Toast.LENGTH_LONG).show()
         }
     }
 
@@ -41,7 +41,9 @@ class MainActivity : AppCompatActivity() {
         txt.addTextChangedListener(object : TextWatcher {
             override fun afterTextChanged(p0: Editable?) {
                 if (!txtEmail.text.toString().equals("") && !txtPsw.text.toString().equals("")) {
-
+                    btnGo.setEnabled(true)
+                }else{
+                    btnGo.setEnabled(false)
                 }
             }
 

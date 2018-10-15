@@ -52,13 +52,14 @@
             </RelativeLayout>
         </LinearLayout>
 
-        <TextView
-            android:id="@+id/personal_data_description_text_view"
+        <EditText
+            android:id="@+id/personal_data_description_editText"
             android:layout_width="match_parent"
-            android:layout_height="95dp"
-            android:padding="@dimen/padding"
-            android:scrollbars="vertical"
-            android:text="@string/lore_ipsum" />
+            android:layout_height="138dp"
+            android:ems="10"
+            android:hint="@string/personal_data_description_hint"
+            android:inputType="textMultiLine"
+            android:maxLines="10" />
 
         <TextView
             android:layout_width="match_parent"
@@ -83,7 +84,7 @@
                 android:padding="@dimen/padding"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/radiobtn_login_hombre" />
+                android:text="@string/radiobtn_login_mujer" />
         </RadioGroup>
         <TextView
             android:padding="@dimen/padding"
@@ -155,7 +156,8 @@
             android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="@string/personal_data_button_save"/>
+            android:text="@string/personal_data_button_save"
+            android:onClick="onSaveButtonClicked"/>
         <Button
             android:layout_gravity="center"
             android:padding="@dimen/padding"

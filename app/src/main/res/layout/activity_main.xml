@@ -73,7 +73,8 @@
             android:layout_marginEnd="20dp"
             android:background="@drawable/button_selector"
             android:onClick="onGoPressed"
-            android:text="@string/firstButton" />
+            android:text="@string/firstButton"
+            android:enabled="false"/>
 
 
 
