@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="Registro"
+        android:textSize="20dp"
         android:textAlignment="center" />
 
     <android.support.design.widget.TextInputLayout
@@ -99,44 +100,6 @@
 
     </LinearLayout>
 
-    <TextView
-        android:text="Género"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:id="@+id/textView"
-        />
-
-    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center">
-
-        <RadioButton
-            android:id="@+id/radiobtn_login_man"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:text="@string/radiobtn_login_hombre"
-            />
-
-        <RadioButton
-            android:id="@+id/radiobtn_login_women"
-            android:layout_width="81dp"
-            android:layout_height="wrap_content"
-            android:text="@string/radiobtn_login_mujer"
-            />
-
-        <RadioButton
-            android:id="@+id/radiobtn_login_other"
-            android:layout_width="72dp"
-            android:layout_height="wrap_content"
-            android:text="@string/radiobtn_login_otro"
-            />
-
-    </RadioGroup>
-
-
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -148,12 +111,5 @@
         android:hint="Fecha"
         android:onClick="showDatePickerDialog"/>
 
-    <android.support.design.widget.FloatingActionButton
-        android:layout_width="48dp"
-        android:layout_height="41dp"
-        android:clickable="true"
-        android:layout_marginLeft="300dp"
-        android:id="@+id/floatingActionButton"
-        android:src="@android:drawable/ic_media_next"/>
 
 </LinearLayout>

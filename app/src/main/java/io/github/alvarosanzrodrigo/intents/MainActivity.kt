@@ -3,7 +3,10 @@ package io.github.alvarosanzrodrigo.intents
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
 import android.view.View
+import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import butterknife.BindView
@@ -13,31 +16,40 @@ class MainActivity : AppCompatActivity() {
     //@BindView(R.id.editText2) lateinit var txtEmail : EditText
     lateinit var txtEmail: EditText
     lateinit var txtPsw: EditText
-    companion object {
-        public val KEY_USER_NAME = "foo"
-        public  val KEY_USER_PASSWORD = "fii"
-    }
+    lateinit var btnGo: Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         txtEmail = findViewById(R.id.editText2)
         txtPsw = findViewById(R.id.editText3)
+        btnGo = findViewById(R.id.btnGo)
+        txtWatch(txtEmail)
+        txtWatch(txtPsw)
     }
 
     fun onGoPressed(view: View) {
-        val intent = Intent(this@MainActivity, PersonalData::class.java)
-
-       intent.putExtra(KEY_USER_NAME, txtEmail.text.toString())
-        intent.putExtra(KEY_USER_PASSWORD, txtPsw.text.toString())
-       startActivityForResult(intent, 0)
+        if (txtEmail.text.toString().equals("ejemplo@ejemplo.com") && txtPsw.text.toString().equals("123")) {
+            val intent = Intent(this@MainActivity, UserActivity::class.java)
+            startActivityForResult(intent, 0)
+        } else {
+            Toast.makeText(this, "Contraseña o correo incorrecto", Toast.LENGTH_LONG)
+        }
     }
 
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data)
+    fun txtWatch(txt: EditText) {
+        txt.addTextChangedListener(object : TextWatcher {
+            override fun afterTextChanged(p0: Editable?) {
+                if (!txtEmail.text.toString().equals("") && !txtPsw.text.toString().equals("")) {
 
-        if (resultCode == requestCode)
-            Toast.makeText(this, "resultCode: $resultCode y requestCode $requestCode, y además son iguales", Toast.LENGTH_LONG).show()
-         else
-            Toast.makeText(this, "resultCode: $resultCode y requestCode $requestCode, y además son diferentes", Toast.LENGTH_LONG).show()
+                }
+            }
+
+            override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+            }
+
+            override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+            }
+        })
     }
 }
