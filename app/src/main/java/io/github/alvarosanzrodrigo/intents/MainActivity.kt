@@ -9,10 +9,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import butterknife.BindView
-import butterknife.ButterKnife
-import android.R.attr.key
-
+import android.util.Patterns
 
 
 class MainActivity : AppCompatActivity() {
@@ -20,6 +17,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var txtEmail: EditText
     lateinit var txtPsw: EditText
     lateinit var btnGo: Button
+    val mailPattern = Patterns.EMAIL_ADDRESS
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -51,8 +49,13 @@ class MainActivity : AppCompatActivity() {
     fun txtWatch(txt: EditText) {
         txt.addTextChangedListener(object : TextWatcher {
             override fun afterTextChanged(p0: Editable?) {
-                if (!txtEmail.text.toString().equals("") && !txtPsw.text.toString().equals("")) {
-                    btnGo.setEnabled(true)
+
+                if (!txtPsw.text.toString().equals("")) {
+                    if(mailPattern.matcher(txtEmail.text.toString()).matches()) {
+                        btnGo.setEnabled(true)
+                    }else{
+                        txtEmail.setError("Is not a valid email")
+                    }
                 }else{
                     btnGo.setEnabled(false)
                 }

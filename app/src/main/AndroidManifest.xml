@@ -20,7 +20,6 @@
         </activity>
         <activity android:name=".UserActivity" />
         <activity android:name=".PersonalData" />
-        <activity android:name=".Pruebapic"></activity>
     </application>
 
 </manifest>
