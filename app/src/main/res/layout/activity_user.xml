@@ -91,10 +91,10 @@
                 android:layout_height="wrap_content"
                 android:inputType="none"
                 android:ems="10"
-                android:id="@+id/etxtDate"
+                android:id="@+id/txtDate"
                 android:layout_weight="25"
                 android:layout_marginLeft="20dp"
-               />
+        />
 
         <Button
                 android:id="@+id/obtenerfecha"
@@ -102,10 +102,29 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="75"
                 android:layout_marginRight="20dp"
-        android:onClick="showDatePickerDialog">
+                android:onClick="showDatePickerDialog">
         </Button>
 
     </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@id/nameLinearLayout"
+                  android:weightSum="1">
+
+        <EditText android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:ems="10"
+                  android:layout_marginStart="20dp"
+                  android:id="@+id/txtDireccion"
+                  android:hint="Direccion"
+                  android:layout_marginRight="20dp"/>
+
+
+    </LinearLayout>
+
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                   android:orientation="horizontal"

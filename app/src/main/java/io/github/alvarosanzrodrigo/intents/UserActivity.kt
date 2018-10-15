@@ -12,17 +12,17 @@ import android.widget.TextView
 
 class UserActivity : AppCompatActivity() {
 
-
-    lateinit var etxtDate:TextView
+    lateinit var textfecha:TextView
     var TAG:String = "datePicker"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_user)
-        val intent = getIntent()
-        val us = intent.extras.get(User.intentKey)
-        us as User
-        setResult(0)
+       // val intent = getIntent()
+       // val us = intent.extras.get(User.intentKey)
+       // us as User
+       // setResult(0)
+        textfecha = findViewById(R.id.txtDate)
     }
 
     fun showDatePickerDialog(v: View) {
@@ -30,7 +30,7 @@ class UserActivity : AppCompatActivity() {
             override fun onDateSet(datePicker: DatePicker, year: Int, month: Int, day: Int) {
                 // +1 because january is zero
                 val selectedDate = day.toString() + " / " + (month + 1) + " / " + year
-                etxtDate.setText(selectedDate)
+                textfecha.setText(selectedDate)
             }
         })
         newFragment.show(supportFragmentManager, TAG)
