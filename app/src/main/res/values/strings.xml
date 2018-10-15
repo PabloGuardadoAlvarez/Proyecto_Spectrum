@@ -4,8 +4,8 @@
     <string name="pass">Password</string>
     <string name="firstButton">Go!</string>
     <string name="helperTextPassword">Esto es una contraseña</string>
-    <string name="radiobtn_login_hombre">Male</string>
-    <string name="radiobtn_login_mujer">Female</string>
+    <string name="radiobtn_login_hombre">Hombre</string>
+    <string name="radiobtn_login_mujer">Mujer</string>
     <string name="radiobtn_login_otro">Otro</string>
     <string name="profile_pic">profile pic</string>
     <string name="lore_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus, eros ut congue accumsan, velit sapien condimentum purus, quis commodo nulla massa quis eros. Cras vehicula, magna et sodales pulvinar, arcu eros efficitur mi, sit amet rhoncus velit augue ac nulla. Sed id nisi et leo aliquet convallis ac ac tortor. Cras egestas consequat nisi, ut consequat lacus scelerisque vel. Donec in euismod urna, accumsan sollicitudin sapien. Morbi nec metus facilisis, lobortis arcu non, elementum elit. Curabitur quis quam fermentum, commodo quam a, semper nulla. Proin vitae ante in magna mollis commodo.</string>
@@ -21,5 +21,11 @@
     <string name="personal_data_button_skip">Skip</string>
     <string name="name">Name</string>
     <string name="surname">Surname</string>
-    <string name="personal_data_description_hint">Description</string>
+    <string name="titlulo_pickers">Obtener fecha y hora</string>
+    <string name="formato_fecha">dd/mm/yyyy</string>
+
+    <string-array name="spinner_tlf">
+        <item>Fijo</item>
+        <item>Movil</item>
+    </string-array>
 </resources>
