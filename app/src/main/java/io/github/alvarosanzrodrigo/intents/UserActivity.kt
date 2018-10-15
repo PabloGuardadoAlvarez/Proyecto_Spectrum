@@ -67,14 +67,15 @@ class UserActivity : AppCompatActivity() {
             val intent = Intent(this, PersonalData::class.java)
 
             val us = User()
-            us.name = txtfecha.text.toString()
+            us.name = txtnombre.text.toString()
+            us.date= txtfecha.text.toString()
             us.surname = txtapellido.text.toString()
             us.surname2 = txtapellido2.text.toString()
-            us.adress = txtdireccion.text.toString()
+            us.address = txtdireccion.text.toString()
             us.city = txtciudad.text.toString()
             us.postalCode = txtCD.text.toString()
             us.phone = Integer.parseInt(txttelefono.text.toString())
-            us.phoneType = tipotelefono.toString()
+            us.phoneType = tipotelefono.selectedItem.toString()
             intent.putExtra(User.intentKey, us)
             startActivityForResult(intent, 0)
 

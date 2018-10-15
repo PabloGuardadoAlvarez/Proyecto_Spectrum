@@ -59,7 +59,14 @@
             android:ems="10"
             android:hint="@string/personal_data_description_hint"
             android:inputType="textMultiLine"
-            android:maxLines="10" />
+            android:maxLines="10"
+            android:autofillHints="" />
+
+        <TextView
+            android:padding="@dimen/padding"
+            android:id="@+id/descriptionCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -68,22 +75,25 @@
             android:text="@string/gender" />
 
         <RadioGroup
-            android:padding="@dimen/padding"
+            android:id="@+id/personal_data_gender_radiobutton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:orientation="horizontal"
-            android:gravity="center">
+            android:padding="@dimen/padding">
 
             <RadioButton
-                android:padding="@dimen/padding"
+                android:id="@+id/radioButtonMale"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:padding="@dimen/padding"
                 android:text="@string/radiobtn_login_hombre" />
 
             <RadioButton
-                android:padding="@dimen/padding"
+                android:id="@+id/radioButtonFemale"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:padding="@dimen/padding"
                 android:text="@string/radiobtn_login_mujer" />
         </RadioGroup>
         <TextView
@@ -107,45 +117,45 @@
                 android:rowCount="3">
 
                 <CheckBox
-                    android:padding="@dimen/padding"
-                    android:id="@+id/checkBox6"
+                    android:id="@+id/checkBoxMovies"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:padding="@dimen/padding"
                     android:text="@string/hobby_movies" />
 
                 <CheckBox
-                    android:padding="@dimen/padding"
-                    android:id="@+id/checkBox5"
+                    android:id="@+id/checkBoxHiking"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:padding="@dimen/padding"
                     android:text="@string/hobby_hiking" />
 
                 <CheckBox
-                    android:padding="@dimen/padding"
-                    android:id="@+id/checkBox4"
+                    android:id="@+id/checkBoxSports"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:padding="@dimen/padding"
                     android:text="@string/hobby_sport" />
 
                 <CheckBox
-                    android:padding="@dimen/padding"
-                    android:id="@+id/checkBox3"
+                    android:id="@+id/checkBoxFriends"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:padding="@dimen/padding"
                     android:text="@string/hobby_friends" />
 
                 <CheckBox
-                    android:id="@+id/checkBox"
+                    android:id="@+id/checkBoxDancing"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="@dimen/padding"
                     android:text="@string/hobby_dance" />
 
                 <CheckBox
-                    android:padding="@dimen/padding"
-                    android:id="@+id/checkBox2"
+                    android:id="@+id/checkBoxProgramming"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:padding="@dimen/padding"
                     android:text="@string/hobby_program" />
             </GridLayout>
         </ScrollView>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="8">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:padding="@dimen/padding"
+                android:id="@+id/profilePictureProfileActivity"
+                android:layout_width="511dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:background="@drawable/shape_image_oval"
+                android:contentDescription="@string/profile_pic"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:padding="@dimen/padding">
+
+                <TextView
+                    android:id="@+id/nameTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/text_view_height"
+                    android:text="@string/name" />
+
+                <TextView
+                    android:id="@+id/surnamesTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/text_view_height"
+                    android:layout_below="@id/nameTextView"
+                    android:text="@string/surname" />
+
+                <TextView
+
+                    android:id="@+id/ageGenderTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/text_view_height"
+                    android:layout_below="@id/surnamesTextView"
+                    android:text="@string/age_and_gender_textView" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/profileActivityDescriptionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="138dp"
+            android:height="138dp"
+            android:padding="@dimen/padding"
+            android:text="@string/lore_ipsum" />
+
+        <RelativeLayout
+            android:padding="@dimen/padding"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:padding="@dimen/padding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/address"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center"
+                android:background="@drawable/button_selector"
+                android:padding="@dimen/padding"
+                android:text="@string/map" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:padding="@dimen/padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:padding="@dimen/padding"
+                android:id="@+id/address_textView"
+                android:layout_width="@dimen/activity_profile_textView_width"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/address" />
+
+            <TextView
+                android:padding="@dimen/padding"
+                android:id="@+id/postal_code_textView"
+                android:layout_width="177dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/address_textView"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="52dp"
+                android:layout_marginTop="0dp"
+                android:text="@string/postal_code" />
+
+            <TextView
+                android:padding="@dimen/padding"
+                android:id="@+id/city_textView"
+                android:layout_width="102dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/address_textView"
+                android:layout_toEndOf="@+id/postal_code_textView"
+                android:text="@string/city" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:padding="@dimen/padding"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:padding="@dimen/padding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contacTextView"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center"
+                android:background="@drawable/button_selector"
+                android:padding="@dimen/padding"
+                android:text="@string/contact" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/padding">
+
+            <TextView
+                android:id="@+id/phoneTextView"
+                android:layout_width="129dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/emailTextView"
+                android:layout_alignParentTop="true"
+                android:padding="@dimen/padding"
+                android:text="@string/phone" />
+
+            <TextView
+                android:id="@+id/phoneTypeTextView"
+                android:layout_width="141dp"
+                android:layout_height="wrap_content"
+
+                android:layout_alignTop="@+id/phoneTextView"
+                android:layout_toEndOf="@+id/phoneTextView"
+                android:padding="@dimen/padding"
+                android:text="@string/phone_type" />
+
+            <TextView
+                android:id="@+id/emailTextView"
+                android:layout_width="102dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/phoneTextView"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="41dp"
+                android:padding="@dimen/padding"
+                android:text="@string/email" />
+        </RelativeLayout>
+        <TextView
+            android:padding="@dimen/padding"
+            android:layout_marginLeft="@dimen/padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hobbies"/>
+        <TextView
+            android:id="@+id/hobbiesTextView"
+            android:padding="@dimen/padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/hobbies"
+            />
+    </LinearLayout>
+</ScrollView>

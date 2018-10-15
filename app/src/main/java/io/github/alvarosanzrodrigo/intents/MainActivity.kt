@@ -65,6 +65,15 @@ class MainActivity : AppCompatActivity() {
             }
 
             override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+                if (!txtPsw.text.toString().equals("")) {
+                    if(mailPattern.matcher(txtEmail.text.toString()).matches()) {
+                        btnGo.setEnabled(true)
+                    }else{
+                        txtEmail.setError("Is not a valid email")
+                    }
+                }else{
+                    btnGo.setEnabled(false)
+                }
             }
         })
     }

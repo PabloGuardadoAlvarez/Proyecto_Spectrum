@@ -4,11 +4,11 @@
     <string name="pass">Password</string>
     <string name="firstButton">Go!</string>
     <string name="helperTextPassword">Esto es una contraseña</string>
-    <string name="radiobtn_login_hombre">Hombre</string>
-    <string name="radiobtn_login_mujer">Mujer</string>
+    <string name="radiobtn_login_hombre">Male</string>
+    <string name="radiobtn_login_mujer">Female</string>
     <string name="radiobtn_login_otro">Otro</string>
     <string name="profile_pic">profile pic</string>
-    <string name="personal_data_description_hint">A hint</string>
+    <string name="personal_data_description_hint">Description</string>
     <string name="lore_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus, eros ut congue accumsan, velit sapien condimentum purus, quis commodo nulla massa quis eros. Cras vehicula, magna et sodales pulvinar, arcu eros efficitur mi, sit amet rhoncus velit augue ac nulla. Sed id nisi et leo aliquet convallis ac ac tortor. Cras egestas consequat nisi, ut consequat lacus scelerisque vel. Donec in euismod urna, accumsan sollicitudin sapien. Morbi nec metus facilisis, lobortis arcu non, elementum elit. Curabitur quis quam fermentum, commodo quam a, semper nulla. Proin vitae ante in magna mollis commodo.</string>
     <string name="gender">Gender</string>
     <string name="hobbies">Hobbies</string>
@@ -24,7 +24,17 @@
     <string name="surname">Surname</string>
     <string name="titlulo_pickers">Obtener fecha y hora</string>
     <string name="formato_fecha">dd/mm/yyyy</string>
-
+    <string name="age_and_gender_textView">age and gender</string>
+    <string name="address">Address:</string>
+    <string name="contact">Contact</string>
+    <string name="postal_code">Postal Code</string>
+    <string name="city">City</string>
+    <string name="map">Map</string>
+    <string name="contacTextView">Contact:</string>
+    <string name="phone">Phone</string>
+    <string name="phone_type">Phone Type</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
     <string-array name="spinner_tlf">
         <item>Fijo</item>
         <item>Movil</item>

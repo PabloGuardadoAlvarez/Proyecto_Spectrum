@@ -3,4 +3,5 @@
     <dimen name="padding">14dp</dimen>
     <dimen name="text_view_height">30dp</dimen>
     <dimen name="personal_data_scroll_view_checkboxes_height">120dp</dimen>
+    <dimen name="activity_profile_textView_width">279dp</dimen>
 </resources>
